@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-      title: 'Sam Lynn Davis - Developer',
+      title: 'Sam Lynn Davis',
       author: 'Sam Lynn Davis',
   },
   

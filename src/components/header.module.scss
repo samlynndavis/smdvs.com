@@ -1,11 +1,16 @@
 .header {
     padding: 1rem 0 3rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .title {
-    color: #000000;
-    font-size: 3rem;
+    color: #111111;
+    font-size: 1rem;
     text-decoration: none;
+    font-weight: 800;
+    padding: .5rem;
+    text-transform: uppercase;
 }
 
 .nav-list {
@@ -15,14 +20,15 @@
 }
 
 .nav-item {
-    color: #999999;
+    color: rgba(0,0,0,.45);
     font-size: .9rem;
     margin-right: 1.3rem;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .nav-item:hover {
-    color: #666666;
+    color: #111111;
 }
 
 .active-nav-item {
