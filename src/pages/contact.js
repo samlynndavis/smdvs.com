@@ -8,7 +8,7 @@ const ContactPage = () => {
         <div>
             <Layout>
                 <Head title="Contact" />
-                <h1>Get In Touch!</h1>
+                <h2>Get In Touch!</h2>
                 <li><a href="https://www.instagram.com/samlynndavis">Instagram</a></li>
                 <li><a href="https://www.twitter.com/samueldavis" target="_blank" rel="noopener noreferrer">Twitter</a></li>
                 <li><a href="mailto:hello@smdvs.com">Email</a></li>

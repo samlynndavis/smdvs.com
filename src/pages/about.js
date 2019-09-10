@@ -9,7 +9,7 @@ const AboutPage = () => {
         <div>
             <Layout>
                 <Head title="About" />
-                <h1>About</h1>
+                <h2>About</h2>
                 <p>My name is Sam Davis and I am a full-stack web developer.</p>
                 <p><Link to="/contact">Want to reach out?</Link></p>
             </Layout>
