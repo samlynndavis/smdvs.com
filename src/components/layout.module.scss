@@ -12,3 +12,42 @@
 .content {
     flex-grow: 1;
 }
+
+.hero {
+    font-weight: 600;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.title {
+  font-weight: 900;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 193, 7, 1),
+    rgba(183, 21, 64, 1),
+    rgba(255, 193, 7, 1)
+  );
+  background-size: 300% 300%;
+  -webkit-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
