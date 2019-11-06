@@ -16,7 +16,7 @@ const Footer = () => {
     
     return (
         <footer className={footerStyles.footer}>
-        <nav>
+        {/* <nav>
           <ul className={footerStyles.footerNavList}>
             <li>
               <a href="#">Patreon</a>
@@ -25,7 +25,7 @@ const Footer = () => {
               <a href="#">RSS</a>
             </li>
           </ul>
-        </nav>
+        </nav> */}
         </footer>
     )
 }

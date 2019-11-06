@@ -31,8 +31,8 @@ const BlogPage = () => {
                         return (
                             <li className={blogStyles.post}>
                                 <Link to={`/blog/${edge.node.slug}`}>
+                                    <p className={blogStyles.blogDetails}>{edge.node.publishedDate}</p> 
                                     <h3 className={blogStyles.blogTitle}>{edge.node.title}</h3>
-                                <p className={blogStyles.blogDetails}>{edge.node.publishedDate}</p> 
                                 </Link>
                             </li>
                         )
