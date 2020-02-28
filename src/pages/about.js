@@ -8,8 +8,8 @@ const AboutPage = () => {
     return (
         <div>
             <Layout>
-                <Head title="About" />
-                <h2>Bio</h2>
+                <Head title="About - Samuel Lynn Davis" />
+                <h1>Bio</h1>
                 <p>My name is Sam Davis and I am a full-stack web developer.</p>
                 <p><Link to="/contact">Want to reach out?</Link></p>
             </Layout>

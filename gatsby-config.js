@@ -7,7 +7,7 @@
 module.exports = {
   siteMetadata: {
       title: 'Samuel Lynn Davis',
-      author: 'Sam Lynn Davis',
+      author: 'Samuel Lynn Davis',
   },
   
   plugins: [

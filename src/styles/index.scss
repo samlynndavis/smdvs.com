@@ -11,30 +11,30 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    background: #f6b933;
+    background: #e3b79a;
 
-    animation: colorchange 1000s infinite; /* animation-name followed by duration in seconds*/
-         /* you could also use milliseconds (ms) or something like 2.5s */
-      -webkit-animation: colorchange 1000s infinite; /* Chrome and Safari */
+    // animation: colorchange 1000s infinite; /* animation-name followed by duration in seconds*/
+    //      /* you could also use milliseconds (ms) or something like 2.5s */
+    //   -webkit-animation: colorchange 1000s infinite; /* Chrome and Safari */
     }
 
-@keyframes colorchange
-{
-    0%   {background: #e44d4c;}
-    25%  {background: #f6b933;}
-    50%  {background: #ed6f33;}
-    75%  {background: #3b91bd;}
-    100% {background: #e44d4c;}
-}
+// @keyframes colorchange
+// {
+//     0%   {background: #e44d4c;}
+//     25%  {background: #f6b933;}
+//     50%  {background: #ed6f33;}
+//     75%  {background: #3b91bd;}
+//     100% {background: #e44d4c;}
+// }
 
-@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
-{
-    0%   {background: #e44d4c;}
-    25%  {background: #f6b933;}
-    50%  {background: #ed6f33;}
-    75%  {background: #3b91bd;}
-    100% {background: #e44d4c;}
-}
+// @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+// {
+//     0%   {background: #e44d4c;}
+//     25%  {background: #f6b933;}
+//     50%  {background: #ed6f33;}
+//     75%  {background: #3b91bd;}
+//     100% {background: #e44d4c;}
+// }
 
 ::selection {
 background-color: #3b91bd;

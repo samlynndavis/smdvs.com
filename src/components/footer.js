@@ -16,16 +16,54 @@ const Footer = () => {
     
     return (
         <footer className={footerStyles.footer}>
-        {/* <nav>
-          <ul className={footerStyles.footerNavList}>
+        <nav>
+          <ul className={footerStyles.socialNavList}>
             <li>
-              <a href="#">Patreon</a>
+              <p>Social</p>
             </li>
             <li>
-              <a href="#">RSS</a>
+              <a href="https://www.twitter.com/samueldavis" target="_blank" rel="noopener noreferrer">
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/samlynndavis" target="_blank" rel="noopener noreferrer">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://www.github.com/samlynndavis" target="_blank" rel="noopener noreferrer">
+                Github
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/samlynndavis/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
             </li>
           </ul>
-        </nav> */}
+          <ul className={footerStyles.socialNavList}>
+            <li>
+              <p>Email</p>
+            </li>
+            <li>
+              <a href="mailto:hello@smdvs.com">
+                hello@smdvs.com
+                </a>
+            </li>
+          </ul>
+          <ul className={footerStyles.socialNavList}>
+            <li>
+              <p>CV</p>
+            </li>
+            <li className={footerStyles.resume}>
+              <a href="https://www.smdvs.com/sam_lynn_davis_resume.pdf" target="_blank" rel="noopener noreferrer">
+                Download Resume
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p className={footerStyles.copyright}>@2020 Samuel Lynn Davis.</p>
         </footer>
     )
 }
