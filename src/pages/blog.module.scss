@@ -1,16 +1,26 @@
 .posts {
   list-style-type: none;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .blog-title {
   margin-bottom: 0;
   color: #fff;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+
+  font-family: 'Montreal';
 }
 
 .blog-details {
   font-size: 1rem;
   color: #fff;
+  text-transform: uppercase;
+
+  font-family: 'Montreal-Light';
 }
 
 .post {
@@ -32,7 +42,7 @@
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 900;
     display: inline;
   }
@@ -41,7 +51,8 @@
 
     
     .blog-title {
-      color: #000;
+      color: #fdd630;
+      transition: all 0.2s ease
     }
   }
 

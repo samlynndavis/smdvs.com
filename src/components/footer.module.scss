@@ -4,6 +4,11 @@
   flex-direction: column;
   text-transform: uppercase;
 
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+
   nav {
     display: flex;
     width: 100%;
@@ -17,7 +22,7 @@
   }
 
   .copyright {
-    font-size: .7rem;
+    font-size: .6rem;
   }
 
 }
@@ -38,15 +43,15 @@
 
     a {
       color: #fff;
-      font-size: 1.2rem;
+      font-size: 1rem;
       text-decoration: none;
       font-weight: 600;
 
       transition: 0.2s ease;
-    }
-
-    a:hover {
-      color: #fff;
+    
+    &:hover {
+      color: #fdd630;
       transition: 0.2s ease;
     }
+  }
 }

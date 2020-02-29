@@ -14,14 +14,16 @@
 }
 
 .hero {
-    font-weight: 400;
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 800;
+    font-display: swap;
+
+    font-size: 2.5rem;
+
     justify-self: center;
     text-transform: uppercase;
     text-align: center;
-}
-
-.bold {
-  font-weight: 900;
 }
 
 .job__title {
@@ -53,7 +55,6 @@
     z-index: -1;
     width: calc(100% + 0px);
     transform: scaleX(1);
-    transform-origin: 0% 50%;
     bottom: -1px;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
@@ -64,19 +65,36 @@
 
   &:hover::after {
     transform: scaleX(0);
-    transform-origin: 50% 0%;
   }
 }
 
 .accent {
   color: #fff;
   position: relative;
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
 
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 
   &:hover {
+    font-family: 'Inter';
+    font-style:  normal;
     font-weight: 800;
-    transition: all 0.2s ease;
+    font-display: swap;
+
+    color: #fdd630;
+
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
   }
 
   &::after {
@@ -90,7 +108,6 @@
     z-index: -1;
     width: calc(100% + 0px);
     transform: scaleX(1);
-    transform-origin: 0% 50%;
     bottom: -1px;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
@@ -101,7 +118,6 @@
 
   &:hover::after {
     transform: scaleX(0);
-    transform-origin: 50% 0%;
     font-weight: 800;
   }
 }

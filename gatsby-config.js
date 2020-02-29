@@ -11,6 +11,15 @@ module.exports = {
   },
   
   plugins: [
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Montreal, Montreal-Light, Inter"],
+          urls: ["/fonts/fonts.css"],
+        },
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-contentful',

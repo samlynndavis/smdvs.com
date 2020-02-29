@@ -7,47 +7,56 @@
 }
 
 header nav ul li.name {
-  margin: 0 10rem;
+  margin: 0 10vw;
 }
 
 .title {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     padding: .3rem 0;
     position: relative;
     text-transform: uppercase;
 
-    transition: 0.2s ease;
-}
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 600;
+    font-display: swap;
 
-.title::after {
-  background-color: #fff;
-  content: ' ';
-  display: block;
-  height: 2px;
-  opacity: 1;
-  position: absolute;
-  left: 0;
-  z-index: -1;
-  width: calc(100% + 0px);
-  transform: scaleX(0);
-  transform-origin: 0% 50%;
-  bottom: -1px;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 
-.title:hover::after {
-  transform: scaleX(1);
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  &::after {
+    background-color: #fdd630;
+    content: ' ';
+    display: block;
+    height: 2px;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: calc(100% + 0px);
+    transform: scaleX(0);
+    transform-origin: 0% 50%;
+    bottom: -1px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
 }
 
 .nav-list {
@@ -58,13 +67,17 @@ header nav ul li.name {
 
 .nav-item {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0 .5rem;
     padding: .3rem 0 ;
     text-decoration: none;
-    font-weight: 500;
     position: relative;
     text-transform: uppercase;
+
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 600;
+    font-display: swap;
 }
 
 .nav-item:hover {
