@@ -22,7 +22,7 @@ const Header = () => {
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">Writing</Link>
                     </li>
                     <li className={headerStyles.name}>
-                        <Link className={headerStyles.title} to="/">{data.site.siteMetadata.title}</Link>
+                        <Link className={headerStyles.navItem } activeClassName={headerStyles.activeNavItem} to="/">{data.site.siteMetadata.title}</Link>
                     </li>
                     <li>
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="#">Projects</Link>

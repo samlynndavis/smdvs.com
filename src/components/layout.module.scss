@@ -16,23 +16,21 @@
 .hero {
     font-family: 'Inter';
     font-style:  normal;
-    font-weight: 800;
+    font-weight: 600;
     font-display: swap;
 
     font-size: 2.5rem;
 
     justify-self: center;
-    text-transform: uppercase;
     text-align: center;
 }
 
-.job__title {
-  font-weight: 900;
+.accent {
   background: linear-gradient(
     45deg,
+    rgba(169, 180, 31, 1),
     rgba(255, 193, 7, 1),
-    rgba(183, 21, 64, 1),
-    rgba(255, 193, 7, 1)
+    rgba(183, 21, 64, 1)
   );
   background-size: 300% 300%;
   -webkit-animation: gradient 15s ease infinite;
@@ -43,34 +41,7 @@
   -webkit-text-fill-color: transparent;
   
   position: relative;
-
-  &::after {
-    background-color: #fff;
-    content: ' ';
-    display: block;
-    height: 2px;
-    opacity: 1;
-    position: absolute;
-    left: 0;
-    z-index: -1;
-    width: calc(100% + 0px);
-    transform: scaleX(1);
-    bottom: -1px;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-  }
-
-  &:hover::after {
-    transform: scaleX(0);
-  }
-}
-
-.accent {
-  color: #fff;
-  position: relative;
+  
   font-family: 'Inter';
   font-style:  normal;
   font-weight: 400;
@@ -82,21 +53,6 @@
   -ms-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 
-  &:hover {
-    font-family: 'Inter';
-    font-style:  normal;
-    font-weight: 800;
-    font-display: swap;
-
-    color: #fdd630;
-
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-  }
-
   &::after {
     background-color: #fff;
     content: ' ';
@@ -107,7 +63,7 @@
     left: 0;
     z-index: -1;
     width: calc(100% + 0px);
-    transform: scaleX(1);
+    transform: scaleX(0);
     bottom: -1px;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
@@ -116,8 +72,21 @@
     transition: all 0.2s ease-out;
   }
 
+  &:hover {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 800;
+    font-display: swap;
+
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+
   &:hover::after {
-    transform: scaleX(0);
+    transform: scaleX(1);
     font-weight: 800;
   }
 }

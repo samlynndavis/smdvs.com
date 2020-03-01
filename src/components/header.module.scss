@@ -10,30 +10,34 @@ header nav ul li.name {
   margin: 0 10vw;
 }
 
-.title {
-    color: #fff;
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-item {
+    color: hsla(42, 70%, 83%, 1);
     font-size: 1rem;
+    margin: 0 .5rem;
+    padding: .3rem 0 ;
     text-decoration: none;
-    padding: .3rem 0;
     position: relative;
     text-transform: uppercase;
 
     font-family: 'Inter';
     font-style:  normal;
-    font-weight: 600;
+    font-weight: 400;
     font-display: swap;
 
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
+    transition: 0.2s ease;
+    
 
   &::after {
-    background-color: #fdd630;
+    background-color: rgba(0, 100, 172, 1);
     content: ' ';
     display: block;
-    height: 2px;
+    height: 1px;
     opacity: 1;
     position: absolute;
     left: 0;
@@ -41,7 +45,8 @@ header nav ul li.name {
     width: calc(100% + 0px);
     transform: scaleX(0);
     transform-origin: 0% 50%;
-    bottom: -1px;
+    bottom: 2px; 
+
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -59,37 +64,17 @@ header nav ul li.name {
   }
 }
 
-.nav-list {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-}
+.active-nav-item {
 
-.nav-item {
-    color: #fff;
-    font-size: 1rem;
-    margin: 0 .5rem;
-    padding: .3rem 0 ;
-    text-decoration: none;
-    position: relative;
-    text-transform: uppercase;
+  &:hover {
+    color:hsla(42, 70%, 83%, 1);
+  }
 
-    font-family: 'Inter';
-    font-style:  normal;
-    font-weight: 600;
-    font-display: swap;
-}
-
-.nav-item:hover {
-  color: #fff;
-  transition: 0.2s ease;
-}
-
-.active-nav-item::after {
-   background-color: #fdd630;
+  &::after {
+   background-color: rgba(0, 100, 172, 1);
    content: ' ';
    display: block;
-   height: 2px;
+   height: 1px;
    opacity: 1;
    position: absolute;
    left: 0;
@@ -97,5 +82,6 @@ header nav ul li.name {
    width: calc(100% + 0px);
    transform: scaleX(1);
    transform-origin: 0% 50%;
-   bottom: -1px;
+   bottom: 2px;
  }
+}

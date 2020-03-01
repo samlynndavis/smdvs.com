@@ -3,32 +3,35 @@
   margin: 0;
   display: flex;
   justify-content: center;
-  text-align: center;
-}
-
-.blog-title {
-  margin-bottom: 0;
-  color: #fff;
-  text-transform: uppercase;
-  transition: all 0.2s ease;
-
-  font-family: 'Montreal';
-}
-
-.blog-details {
-  font-size: 1rem;
-  color: #fff;
-  text-transform: uppercase;
-
-  font-family: 'Montreal-Light';
 }
 
 .post {
   margin: 0;
 
+  .blog-title {
+    margin-bottom: 0;
+    color: #f2e0b5;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+  
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 600;
+    font-display: swap;
+  }
+  
+  .blog-details {
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+  
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+
   a {
-    
-    color: #111111;
     display: block;
     padding: 1rem;
     text-decoration: none;
@@ -43,18 +46,15 @@
 
   h3 {
     font-size: 3rem;
-    font-weight: 900;
     display: inline;
   }
 
   &:hover {
 
-    
     .blog-title {
-      color: #fdd630;
+      color: rgba(0, 100, 172, 1);
       transition: all 0.2s ease
     }
   }
-
 }
 
