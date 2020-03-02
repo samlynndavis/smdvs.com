@@ -25,7 +25,7 @@ const Header = () => {
                         <Link className={headerStyles.navItem } activeClassName={headerStyles.activeNavItem} to="/">{data.site.siteMetadata.title}</Link>
                     </li>
                     <li>
-                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="#">Projects</Link>
+                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/projects">Projects</Link>
                     </li>
                 </ul>
             </nav>

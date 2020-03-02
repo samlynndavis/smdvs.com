@@ -3,6 +3,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+const path = require('path');
 
 module.exports = {
   siteMetadata: {
@@ -36,6 +37,14 @@ module.exports = {
         path: `${__dirname}/src/`
       }
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: path.join(__dirname, `src`, `images`),
+      }
+    },
+    'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
@@ -45,8 +54,9 @@ module.exports = {
 						{
 								resolve: 'gatsby-remark-images',
 								options: {
-										maxWidth: 750,
-                    linkImagesToOriginal: false,
+                    maxWidth: 750,
+                    quality: 90,
+                    linkImagesToOriginal: false, 
 								}
 						}
 
