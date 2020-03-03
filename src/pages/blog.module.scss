@@ -5,6 +5,16 @@
   justify-content: center;
 }
 
+a {
+  color: #fff;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: rgba(0, 100, 172, 1);
+    transition: all 0.2s ease;
+  }
+}
+
 .post {
   margin: 0;
 
