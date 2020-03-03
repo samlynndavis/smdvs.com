@@ -8,12 +8,26 @@ import projectStyles from './projects.module.scss'
 import Layout from '../components/layout'
 import Head from '../components/head'
 
+const ColoredLine = ({ color, border, margin }) => (
+  <hr
+      style={{
+          color: "1px solid hsla(42, 70%, 83%, 1);",
+          backgroundColor: "1px solid hsla(42, 70%, 83%, 1);",
+          height: 1,
+          borderTop: "1px dotted",
+          margin: "3.05rem auto",
+          maxWidth: "500px"
+      }}
+  />
+);
+
 const ProjectPage = props => {
     return (
         <div>
             <Layout>
                 <Head title="Projects - Samuel Lynn Davis" />
-                <h1 className={projectStyles.title}>These are some of the things I've built.</h1>
+                <h1 className={projectStyles.title}>This is an ever-updating list of the things I've built.</h1>
+                <ColoredLine />
                 <div className={projectStyles.projectWrapper}>
                     <div className={projectStyles.project}>
                                 <h4>Web Design, Web Development</h4> 

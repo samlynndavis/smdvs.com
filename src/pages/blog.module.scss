@@ -1,7 +1,6 @@
 .posts {
   list-style-type: none;
   margin: 0;
-  display: flex;
   justify-content: center;
 }
 
@@ -21,13 +20,35 @@ a {
   .blog-title {
     margin-bottom: 0;
     color: #f2e0b5;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     transition: all 0.2s ease;
   
     font-family: 'Inter';
     font-style:  normal;
-    font-weight: 600;
+    font-weight: 800;
     font-display: swap;
+
+    font-size: 2rem;
+
+    position: relative;
+
+    &::after {
+      content: ' ';
+      background-color: rgba(0, 100, 172, 1);      
+      display: block;
+      height: 2px;
+      opacity: 1;
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      width: calc(100% + 0px);
+      transform: scaleX(0);
+      transform-origin: 0% 50%;
+      bottom: -8px; 
+
+      transition: all 0.3s ease-in-out;
+      transition-delay: 0.1s;
+    }
   }
   
   .blog-details {
@@ -64,6 +85,11 @@ a {
     .blog-title {
       color: rgba(0, 100, 172, 1);
       transition: all 0.2s ease
+    }
+
+    .blog-title::after {
+      transform: scaleX(1);
+      transition: all 0.3s ease-in
     }
   }
 }

@@ -94,12 +94,14 @@
     font-weight: 800;
     font-display: swap;
 
-    font-size: 11vmin;
+    text-align: center;
+
+    font-size: 7vmin;
     text-transform: uppercase;
 
     margin: 1px 0;
-    border-top: 1px solid hsla(42, 70%, 83%, 1);
-    border-bottom: 1px solid hsla(42, 70%, 83%, 1);
+    // border-top: 1px solid hsla(42, 70%, 83%, 1);
+    // border-bottom: 1px solid hsla(42, 70%, 83%, 1);
 }
 
 @keyframes gradient {

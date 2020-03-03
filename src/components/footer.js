@@ -44,7 +44,7 @@ const Footer = () => {
           </ul>
           <ul className={footerStyles.socialNavList}>
             <li>
-              <p>Email</p>
+              <p>Hire Me</p>
             </li>
             <li>
               <a href="mailto:hello@smdvs.com">
