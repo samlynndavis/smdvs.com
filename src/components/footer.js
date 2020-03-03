@@ -57,7 +57,7 @@ const Footer = () => {
               <p>CV</p>
             </li>
             <li className={footerStyles.resume}>
-              <a href="https://www.smdvs.com/sam_lynn_davis_resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1ec0MDvIWBfxIAS3qWHkA9qojRVXuvhnM/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 Download Resume
               </a>
             </li>
