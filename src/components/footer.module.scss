@@ -42,16 +42,35 @@
     }
 
     a {
-      color: #fff;
+      color: rgba(24, 24, 25, 1);
       font-size: 1rem;
       text-decoration: none;
       font-weight: 400;
+      position: relative;
 
       transition: 0.2s ease;
-    
-    &:hover {
-      color: rgba(0, 100, 172, 1);
-      transition: 0.2s ease;
-    }
+
+      &::after {
+        content: ' ';
+        background-color: rgba(24, 24, 25, 1);
+        display: block;
+        height: 1px;
+        opacity: 1;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        width: calc(100% + 0px);
+        transform: scaleX(0);
+        transform-origin: 0% 50%;
+        bottom: -1px;
+
+        transition: all 0.2s ease-in-out;
+        transition-delay: 0.1s;
+      }
+
+      &:hover::after {
+         transform: scaleX(1);
+         transition: all 0.2s ease-in-out;
+      }
   }
 }

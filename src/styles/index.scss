@@ -12,6 +12,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 
     background: rgba(24, 24, 25, 1);
+    background: rgba(255, 240, 228, 1);
 
     // animation: colorchange 1000s infinite; /* animation-name followed by duration in seconds*/
     //      /* you could also use milliseconds (ms) or something like 2.5s */
@@ -274,6 +275,7 @@ html {
 
 body {
     color: hsla(42, 70%, 83%, 1);
+    color: rgba(24, 24, 25, 1);
     font-family: -apple-system, BlinkMacSystemFont, Inter, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: normal;

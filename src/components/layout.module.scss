@@ -26,20 +26,21 @@
 }
 
 .accent {
-  background: linear-gradient(
-    45deg,
-    rgba(169, 180, 31, 1),
-    rgba(255, 193, 7, 1),
-    rgba(183, 21, 64, 1)
-  );
-  background-size: 300% 300%;
-  -webkit-animation: gradient 15s ease infinite;
-  animation: gradient 15s ease infinite;
+  // background: linear-gradient(
+  //   45deg,
+  //   rgba(169, 180, 31, 1),
+  //   rgba(255, 193, 7, 1),
+  //   rgba(183, 21, 64, 1)
+  // );
+  // background-size: 300% 300%;
+  // -webkit-animation: gradient 15s ease infinite;
+  // animation: gradient 15s ease infinite;
 
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  // background-clip: text;
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
   
+  color: rgba(24, 24, 25, 1);
   position: relative;
   
   font-family: 'Inter';
@@ -54,17 +55,18 @@
   transition: all 0.2s ease-out;
 
   &::after {
-    background-color: #fff;
+    background-color: rgba(24, 24, 25, 1);
+    ;
     content: ' ';
     display: block;
-    height: 2px;
+    height: 1px;
     opacity: 1;
     position: absolute;
     left: 0;
     z-index: -1;
     width: calc(100% + 0px);
-    transform: scaleX(0);
-    bottom: -1px;
+    transform: scaleX(1);
+    bottom: 0;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -86,7 +88,7 @@
   }
 
   &:hover::after {
-    transform: scaleX(1);
+    transform: scaleX(0);
     font-weight: 800;
   }
 }

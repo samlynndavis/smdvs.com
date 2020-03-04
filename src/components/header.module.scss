@@ -17,7 +17,7 @@ header nav ul li.name {
 }
 
 .nav-item {
-    color: hsla(42, 70%, 83%, 1);
+    color: rgba(24, 24, 25, 1);
     font-size: 1rem;
     margin: 0 .5rem;
     padding: .3rem 0 ;
@@ -34,7 +34,7 @@ header nav ul li.name {
     
 
   &::after {
-    background-color: rgba(0, 100, 172, 1);
+    background-color: rgba(24, 24, 25, 1);
     content: ' ';
     display: block;
     height: 1px;
@@ -67,11 +67,11 @@ header nav ul li.name {
 .active-nav-item {
 
   &:hover {
-    color:hsla(42, 70%, 83%, 1);
+    color: rgba(24, 24, 25, 1);
   }
 
   &::after {
-   background-color: rgba(0, 100, 172, 1);
+   background-color: rgba(24, 24, 25, 1);
    content: ' ';
    display: block;
    height: 1px;

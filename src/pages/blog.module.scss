@@ -2,14 +2,67 @@
   list-style-type: none;
   margin: 0;
   justify-content: center;
+
+  li {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(24, 24, 25, 1);
+    padding: 5px;
+    position: relative;
+
+    transition: all 0.2s ease;
+
+    &::after {
+      content: ' ';
+      background-color: rgba(24, 24, 25, 1);
+      ;
+      display: block;
+      height: 100%;
+      opacity: 1;
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      width: calc(100% + 0px);
+      transform: scaleY(0);
+      transform-origin: 0% 100%;
+      bottom: 0;
+
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      -ms-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+    }
+
+    &:hover {
+      p, 
+      .blog-title {
+        color: rgba(255, 240, 228, 1);
+      }
+
+      &::after {
+        transform: scaleY(1); 
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+      }
+      
+      // background-color: rgba(24, 24, 25, 1);
+
+      transition: all 0.2s ease;
+    }
+  }
 }
 
 a {
-  color: #fff;
+  color: rgba(24, 24, 25, 1);
   transition: all 0.2s ease;
 
   &:hover {
-    color: rgba(0, 100, 172, 1);
+    color: rgba(24, 24, 25, 1);
     transition: all 0.2s ease;
   }
 }
@@ -19,8 +72,7 @@ a {
 
   .blog-title {
     margin-bottom: 0;
-    color: #f2e0b5;
-    // text-transform: uppercase;
+    color: rgba(24, 24, 25, 1);
     transition: all 0.2s ease;
   
     font-family: 'Inter';
@@ -28,33 +80,16 @@ a {
     font-weight: 800;
     font-display: swap;
 
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     position: relative;
-
-    &::after {
-      content: ' ';
-      background-color: rgba(0, 100, 172, 1);      
-      display: block;
-      height: 2px;
-      opacity: 1;
-      position: absolute;
-      left: 0;
-      z-index: -1;
-      width: calc(100% + 0px);
-      transform: scaleX(0);
-      transform-origin: 0% 50%;
-      bottom: -8px; 
-
-      transition: all 0.3s ease-in-out;
-      transition-delay: 0.1s;
-    }
   }
   
   .blog-details {
     font-size: 1rem;
-    color: #fff;
+    color:rgba(24, 24, 25, 1);
     text-transform: uppercase;
+    position: relative;
   
     font-family: 'Inter';
     font-style:  normal;
@@ -64,31 +99,35 @@ a {
 
   a {
     display: block;
-    padding: 1rem;
+    padding: 0 1rem;
     text-decoration: none;
     transition: 500ms ease all;
     position: relative;
   }
 
   p {
+    position: absolute;
     color: #fff;
+    padding: 0 1rem;
     margin-bottom: 0;
+    align-self: center;
   }
 
   h3 {
-    font-size: 3rem;
+    font-size: 2rem;
+    padding: 0 1rem;
     display: inline;
   }
 
   &:hover {
 
     .blog-title {
-      color: rgba(0, 100, 172, 1);
+      color: rgba(24, 24, 25, 1);
       transition: all 0.2s ease
     }
 
     .blog-title::after {
-      transform: scaleX(1);
+      transform: scaleX(0);
       transition: all 0.3s ease-in
     }
   }
