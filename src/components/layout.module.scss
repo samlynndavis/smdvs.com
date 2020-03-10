@@ -23,6 +23,11 @@
 
     justify-self: center;
     text-align: center;
+
+    a {
+      text-decoration: none;
+      text-shadow: 2px 2px #fff0e4, 2px -2px #fff0e4, -2px 2px #fff0e4, -2px -2px #fff0e4;
+    }
 }
 
 .accent {
@@ -66,7 +71,7 @@
     z-index: -1;
     width: calc(100% + 0px);
     transform: scaleX(1);
-    bottom: 0;
+    bottom: 4px;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
