@@ -67,8 +67,28 @@ a {
   }
 }
 
+  .title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+
+    text-align: center;
+
+    color: #fff0e4;
+
+    font-size: 5vmin;
+    text-transform: uppercase;
+
+    margin: 2rem 0;
+
+    background-color: rgba(24, 24, 25, 1);
+    padding: 0.8rem;
+    display: inline-block;
+  }
+
 .post {
-  margin: 0;
+  margin: 3rem 0;
 
   .blog-title {
     margin-bottom: 0;

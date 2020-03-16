@@ -15,24 +15,24 @@ const Header = () => {
       }
     `)
     return (
-        <header className={headerStyles.header}>
-            <nav>
-                <ul className={headerStyles.navList}>
-                    <li>
-                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">Writing</Link>
-                    </li>
-                    <li className={headerStyles.name}>
-                        <Link className={headerStyles.navItem } activeClassName={headerStyles.activeNavItem} to="/">{data.site.siteMetadata.title}</Link>
-                    </li>
+      <header className={headerStyles.header}>
+        <nav>
+          <ul className={headerStyles.navList}>
+            <li>
+              <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">Writing</Link>
+            </li>
+            <li className={headerStyles.name}>
+              <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">{data.site.siteMetadata.title}</Link>
+            </li>
             <li className={headerStyles.nameMobile}>
               <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">SLD</Link>
             </li>
-                    <li>
-                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/projects">Projects</Link>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+            <li>
+              <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/projects">Projects</Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
     )
 }
 
