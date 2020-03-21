@@ -24,8 +24,7 @@ const ProjectPage = props => {
         <div>
             <Layout>
                 <Head title="Projects - Samuel Lynn Davis" />
-                <h1 className={projectStyles.title}>This is an ever-updating list of the things I've built.</h1>
-                <ColoredLine />
+                <h1 className={projectStyles.title}>Projects</h1>
                 <div className={projectStyles.projectWrapper}>
                     <div className={projectStyles.project}>
                                 <h4>Web Design, Web Development</h4> 
