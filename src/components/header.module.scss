@@ -2,12 +2,12 @@
     padding: 2rem 0 2rem;
     margin-bottom: 3rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 header nav ul li.name {
-  margin: 0 10vw;
+  margin: 0 1vw;
 }
 
 header nav ul li.name-mobile {
@@ -70,6 +70,8 @@ header nav ul li.name-mobile {
 
 .active-nav-item {
 
+  font-weight: 800;
+
   &:hover {
     color: rgba(24, 24, 25, 1);
   }
@@ -88,10 +90,6 @@ header nav ul li.name-mobile {
    transform-origin: 0% 50%;
    bottom: 2px;
  }
-}
-
-header nav ul li.name {
-  margin: 0 10vw;
 }
 
 @media only screen and (max-width: 768px) {

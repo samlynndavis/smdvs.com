@@ -93,23 +93,28 @@
 }
 
 .title {
-  font-family: 'Inter';
+  font-family: 'Montreal';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
 
   text-align: center;
 
-  color: #fff0e4;
+  color: rgba(24, 24, 25, 1);
 
-  font-size: 5vmin;
+  font-size: 10vmin;
   text-transform: uppercase;
 
   margin: 2rem 0;
-
-  background-color: rgba(24, 24, 25, 1);
-  padding: 0.8rem;
   display: inline-block;
+}
+
+.subheading {
+  display: flex;
+
+  p {
+    width: 50%;
+  }
 }
 
 @keyframes gradient {

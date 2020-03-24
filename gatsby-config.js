@@ -16,7 +16,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         custom: {
-          families: ["Montreal, Montreal-Light, Inter"],
+          families: ["Montreal, Inter"],
           urls: ["/fonts/fonts.css"],
         },
       },
