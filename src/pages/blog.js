@@ -27,7 +27,7 @@ const BlogPage = () => {
                 <Head title="Writing - Samuel Lynn Davis" />
                 <h1 className={blogStyles.title}>Writing</h1>
                 <div className={blogStyles.subheading}>
-                    <p>In an effort to get more comfortable documenting my process and perhaps "learning in public," from time to time I'll post my thoughts and musings on new tech and the state of the industry. This is where you'll find it.</p>
+                    <p>In an effort to get more comfortable documenting my process and "learning in public," from time to time I'll post my thoughts and musings on new tech and the state of the industry. This is where you'll find those thoughts and musings.</p>
                 </div>
                 <ol className={blogStyles.posts}>
                     {data.allContentfulBlogPost.edges.map((edge) => {
