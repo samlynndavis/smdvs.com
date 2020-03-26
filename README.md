@@ -23,5 +23,5 @@ Built with [Gatsby](www.gastby.org) and hosted on [Netlify](www.netlify.com).
 #### Hosting
 * [Github](https://github.com) for version control
 * [Google Domains](https://domains.google.com/) for domain registration
-* [Netlify](https://www.netlify.com)for static site hosting
+* [Netlify](https://www.netlify.com) for static site hosting
 
