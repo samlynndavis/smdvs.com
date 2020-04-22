@@ -2,10 +2,9 @@
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  text-transform: uppercase;
 
   font-family: 'Inter';
-  font-style:  normal;
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
 
@@ -28,57 +27,58 @@
 }
 
 .social-nav-list {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
 
-    li {
-      margin-bottom: 0.2rem;
+  li {
+    margin-bottom: 0.1rem;
+  }
+
+  p {
+    font-size: .9rem;
+    font-weight: 800;
+  }
+
+  a {
+    color: rgba(24, 24, 25, 1);
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 400;
+    position: relative;
+
+    &::after {
+      content: ' ';
+      background-color: #f2e0b5;
+      display: block;
+      height: 2px;
+      opacity: 1;
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      width: calc(100% + 0px);
+      transform: scaleX(0);
+      transform-origin: 0% 50%;
+      bottom: -2px;
+
+      transition: all 0.2s ease-in-out;
+      transition-delay: 0.1s;
     }
 
-    p {
-      font-size: .9rem;
+    &:hover::after {
+      transform: scaleX(1);
+      transition: all 0.2s ease-in-out;
     }
-
-    a {
-      color: rgba(24, 24, 25, 1);
-      font-size: 1rem;
-      text-decoration: none;
-      font-weight: 400;
-      position: relative;
-
-      transition: 0.2s ease;
-
-      &::after {
-        content: ' ';
-        background-color: rgba(24, 24, 25, 1);
-        display: block;
-        height: 1px;
-        opacity: 1;
-        position: absolute;
-        left: 0;
-        z-index: -1;
-        width: calc(100% + 0px);
-        transform: scaleX(0);
-        transform-origin: 0% 50%;
-        bottom: -1px;
-
-        transition: all 0.2s ease-in-out;
-        transition-delay: 0.1s;
-      }
-
-      &:hover::after {
-         transform: scaleX(1);
-         transition: all 0.2s ease-in-out;
-      }
   }
 }
 
 @media only screen and (max-width: 768px) {
   .footer {
     align-items: center;
+    margin-top: 0;
   }
+
   .social-nav-list {
 
     align-items: center;

@@ -25,19 +25,18 @@ const BlogPage = () => {
         <div>
             <Layout>
                 <Head title="Writing - Samuel Lynn Davis" />
-                <h1 className={blogStyles.title}>Writing</h1>
                 <div className={blogStyles.subheading}>
-                    <p>In an effort to get more comfortable documenting my process and "learning in public," from time to time I'll post my thoughts and musings on new tech and the state of the industry. This is where you'll find those thoughts and musings.</p>
+                    <p>In an effort to get more comfortable documenting my process and "learning in public," from time to time I'll post my thoughts and musings on new tech and the state of the industry. This is where you'll find them.</p>
                 </div>
                 <ol className={blogStyles.posts}>
                     {data.allContentfulBlogPost.edges.map((edge) => {
                         return (
-                            <Link to={`/blog/${edge.node.slug}`}>
-                                <li className={blogStyles.post}>
-                                    <p className={blogStyles.blogDetails}>{edge.node.publishedDate}</p> 
+                            <li className={blogStyles.post}>
+                                <p className={blogStyles.blogDetails}>{edge.node.publishedDate}</p>
+                                <Link to={`/blog/${edge.node.slug}`}>
                                     <h3 className={blogStyles.blogTitle}>{edge.node.title}</h3>
-                                </li>
-                            </Link>
+                                </Link>
+                            </li>
                         )
                     })}
                 </ol>

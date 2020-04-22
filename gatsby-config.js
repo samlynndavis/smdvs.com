@@ -7,10 +7,10 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-      title: 'Samuel Lynn Davis',
-      author: 'Samuel Lynn Davis',
+    title: 'Sam Lynn Davis',
+    author: 'Sam Lynn Davis',
   },
-  
+
   plugins: [
     {
       resolve: "gatsby-plugin-web-font-loader",
@@ -33,7 +33,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-      	name: 'src',
+        name: 'src',
         path: `${__dirname}/src/`
       }
     },
@@ -49,18 +49,18 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-          plugins: [
-						'gatsby-remark-relative-images',
-						{
-								resolve: 'gatsby-remark-images',
-								options: {
-                    maxWidth: 750,
-                    quality: 90,
-                    linkImagesToOriginal: false, 
-								}
-						}
+        plugins: [
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 750,
+              quality: 90,
+              linkImagesToOriginal: false,
+            }
+          }
 
-          ]
+        ]
       }
     }
   ]
