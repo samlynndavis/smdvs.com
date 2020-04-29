@@ -110,3 +110,38 @@ a {
     display: inline;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .subheading {
+    display: flex;
+    justify-content: center;
+
+    p {
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  .posts {
+
+    li {
+      display: flex;
+      align-content: center;
+      padding: 5px;
+      position: relative;
+      flex-direction: column;
+
+      p {
+        align-self: flex-start;
+        margin-bottom: 0.5rem;
+      }
+
+      a {
+        padding-left: 0;
+      }
+    }
+  }
+
+
+
+}

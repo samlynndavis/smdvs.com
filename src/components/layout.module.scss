@@ -103,14 +103,34 @@ a {
 
 @media only screen and (max-width: 768px) {
   .hero {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     letter-spacing: 0rem;
+    text-align: left;
   }
 
   .accent {
+    background: transparent;
+    color: #fff;
+    background-clip: none;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: #fff;
 
     &.available {
-      padding-right: 0.1rem;
+      padding-right: 0rem;
+    }
+
+    &::after {
+      background-color: #fff;
+      content: ' ';
+      display: block;
+      height: 1px;
+      opacity: 1;
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      width: calc(100% + 0px);
+      transform: scaleX(1);
+      bottom: 1px;
     }
   }
 }

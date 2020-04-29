@@ -75,19 +75,21 @@
 
 @media only screen and (max-width: 768px) {
   .footer {
-    align-items: center;
     margin-top: 0;
   }
 
   .social-nav-list {
 
-    align-items: center;
 
     p {
       font-size: 1.2em;
       font-weight: 800;
       margin-bottom: 0;
       margin-top: 0.9rem;
+    }
+
+    a {
+      color: #fff;
     }
   }
 
