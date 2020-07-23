@@ -1,6 +1,6 @@
 # Samuel Lynn Davis
 
-Ever-evolving home for my personal [portfolio site](smdvs.com).
+Ever-evolving home for my personal [portfolio site](www.smdvs.com).
 
 Built with [Gatsby](www.gastby.org) and hosted on [Netlify](www.netlify.com).
 
