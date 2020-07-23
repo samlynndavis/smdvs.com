@@ -1,8 +1,8 @@
 # Samuel Lynn Davis
 
-Ever-evolving home for my personal [portfolio site](www.smdvs.com).
+Ever-evolving home for my personal [portfolio site](https://www.smdvs.com).
 
-Built with [Gatsby](www.gastby.org) and hosted on [Netlify](www.netlify.com).
+Built with [Gatsby](https://www.gastby.org) and hosted on [Netlify](https://www.netlify.com).
 
 
 ## Colophon
