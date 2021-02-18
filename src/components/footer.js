@@ -63,7 +63,7 @@ const Footer = () => {
           </li>
         </ul>
       </nav>
-      <p className={footerStyles.copyright}>@2020 Sam Lynn Davis.</p>
+      <p className={footerStyles.copyright}>@2021 Sam Lynn Davis.</p>
     </footer>
   )
 }
