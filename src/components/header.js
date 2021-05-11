@@ -19,7 +19,7 @@ const Header = () => {
       <nav>
         <ul className={headerStyles.navList}>
           <li>
-            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">Writing</Link>
+            {/* <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">Writing</Link> */}
           </li>
           <li className={headerStyles.name}>
             <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">{data.site.siteMetadata.title}</Link>

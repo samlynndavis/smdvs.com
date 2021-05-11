@@ -1,5 +1,6 @@
 import React from 'react'
-import Img from 'gatsby-image';
+import Img from 'gatsby-image'
+import graphql from 'gatsby'
 
 import projectStyles from './projects.module.scss'
 
